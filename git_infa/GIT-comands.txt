@@ -1,0 +1,31 @@
+                    - НАСТРОЙКА - 
+1 - git config --global user.name "Taranov Sergiy" - настраиваем имя
+2 - git config user.name  - проверка имени - Taranov Sergiy
+3 - git config --global user.email "scorp1323@gmail.com" - настраиваем email
+4 - git config user.email - проверка email
+5 - git config --list - выводим полностью config
+6 - git help --commit -  выводим справку по команде commit
+----------------------------------
+              - ИНИЦИАЦИЯ НОВОЙ ПАПКИ - 
+1 - mkdir site_1 -  Создание нового локального репозитория site_1
+2 - cd site_1 - перейти в папку site_1
+2 - git init - инициировать директорию, в кот. находится
+-----------------------------------
+1 - git status - проверка состояния
+2 - git add <file1> <file2> - подготавливаем коммит, добавляя в него файлы
+3 - git add . - подготавливаем коммит, добавляя в него  все файлы
+4 - git rm <file1> <file2>  - удаляем устаревшие файлы
+5 - git commit -m 'Комментарий к коммиту' - выполняем коммит (слепок)
+-----------------------------------
+              - УДАЛЕННЫЙ КОММИТ -
+1 - git remote add origin https://github.com/scorp1323/site1.git - подключится к удаленному репозиторию и дать ему имя origin
+
+2 - git push -u origin master - загрузка данных с тек. дир. на удаленный репозиторий 
+
+3 - git pull origin maste - автомат. извлекает и затем сливает данные из удалённой ветки в вашу текущую ветку
+
+4 - git remote - перечисляет список имён-сокращений для всех уже указанных удалённых дескрипторов.
+
+5 - git clone https://github.com/scorp1323/site1.git - скопировать содержимое с удал. репоз. в тек. дир.
+
+6 - git remote set-url origin https://github.com/scorp1323/new.git - меняет адресс удаленного репозитория origin на данный (на https://github.com/scorp1323/new.git)

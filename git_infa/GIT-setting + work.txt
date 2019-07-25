@@ -1,0 +1,202 @@
+    === УДАЛЕННЫЙ КОММИТ-Отправить файлы ===
+1 - переходим в папку с файлами - РЕПОЗИТОРИЙ -
+      cd d:/Taranov/HTML_AllTags
+2 - инициализируем ету папку - 
+      git init
+3 - добавляем все файлы для слежки - 
+      git add .
+4 - коммитим файлы - 
+      git commit -m "Коментарий"
+5 - создаем репозиторий на Github (название - new)
+6 - подключаем удал. репозиторий с именем origin 
+      git remote add origin https://github.com/scorp1323/new.git
+7 - отправляем файлы на удал. репозиторий - 
+      git push -u origin master
+=========================================
+    === УДАЛЕННЫЙ КОММИТ-Получить файлы ===
+1 - создаем папку для приема
+2 - переходим в папку 
+     cd d:/Taranov/Git/new
+3 - инициализация папки
+      git init
+4 - скачиваем с удаленного репозитория
+    $ git clone  https://github.com/jquery/jquery.git
+=========================================
+
+
+
+
+1 - WORKING DIRECTORY - рабочая директория
+2 - STANDING AREA - область подготовленных файлов
+3 - GIT DIRECTORY(REPOSITORY) - каталог ГИТа
+
+Стандартный рабочий процесс:
+1 - изменение в файлах в рабочем каталоге WORKING DIRECTORY
+2 - подготовка файлов, добавляя их слепки в STANDING AREA
+3 - помещение файлов с STANDING AREA в каталог постоянного хранения REPOSITORY
+
+==================================================
+Подготовка:
+1 - скачиваем и устанавливаем GIT
+2 - настраиваем имя - вводим
+     git config --global user.name "Taranov Sergiy"
+- Проверка - git config user.name
+  -- Taranov Sergiy
+3 - настраиваем адресс email - вводим
+$ git config --global user.email "scorp1323@gmail.com"
+Опция --global говорит о том, что эти установки достаточно провести только один раз
+- Проверка - git config user.email
+  -- scorp1323@gmail.com
+4 - выводим полностью config
+     git config --list
+5 - выводим справку, например, по команде commit
+  git help --commit
+================================
+Работа:
+1 - создаем GIT-репозиторий - клонируем с сервера или создаем новый
+ --  cd d:/Taranov/GIT_Repoz/gitTutorial - переходим в папку с репозиторием
+ -- $ git init - 
+ НАПИШЕТ:
+  - Initialized empty Git repository in D:/Taranov/GIT_Repoz/gitTutorial/.git/
+     - если пустой
+  - Reinitialized existing Git repository in D:/Taranov/GIT_Repoz/gitTutorial/.git/ - если уже есть такой туториал
+  (создается скрытая папка .git)
+2 - в папке с репозиторием (D:/Taranov/GIT_Repoz/gitTutorial) создаем файл index.html и GIT_lifecycle.jpg 
+  - они пока еще не находятся под версионным контролем
+3 - каждый файл, согласно рисунку GIT_lifecycle.jpg может находится в одном из 2 состояний:
+-- под версионным контролем (unmodified + modified + staged)
+     (немодифицированный + модифицированный + постановочный)
+-- не под версионным контролем (untracked) (Неотслеживаемый)
+-------------------------------
+Создание нового локального репозитория
+ --  mkdir project_dir
+ --  cd project_dir
+ -- git init
+------------------------------
+
+
+
+4 - отследим
+    - git status - Untracked files: (неотслеживаемые файлы):
+    - GIT_lifecycle.jpg
+    - index.html
+ - On branch master - мы нах. в ветке мастер(главная)
+5 - добавим файлы для отслеживания
+  - $ git add . (. - добавить все файлы)
+  - git status
+    Changes to be committed:
+        new file:   GIT_lifecycle.jpg
+        new file:   index.html
+5 - откроем проект gitTutorial
+6 - откроем index.html и создаем html-файл (сделали изменения)
+7 - git status -  modified:   index.html
+8 - git add index.html
+9 - git status
+  Changes to be committed:
+        new file:   GIT_lifecycle.jpg
+        new file:   index.html
+10 - добавим строку в index.html   
+      <p>новое изменение файла index.html</p>
+11 - git status
+  Changes to be committed:
+        new file:   GIT_lifecycle.jpg
+        new file:   index.html
+Changes not staged for commit:
+        modified:   index.html
+Тоесть сейчас файл index.html одновременно проиндексирован и непроиндексирован - т.е. GIT индексирует файл в точности в том состоянии, в кот. мы последний раз выполнили команду git add
+Если сейчас его огткомитить - он попадет в комин в том состоянии, в кот. он находился при последней команде git add, а не в том состоянии, в кот. он нах. в раб. каталоге сейчас,
+т.е. нам снова надо выподнить git add
+12 - git add .
+13 - git status
+  Changes to be committed:
+        new file:   GIT_lifecycle.jpg
+        new file:   index.html
+
+14 - git commit -m "firsts commit ot TARANOV"
+  Комитим и пишем небольшой коментарий ("firsts commit ot TARANOV")
+   [master f9d5916] firsts commit ot TARANOV
+ 2 files changed, 11 insertions(+)
+ create mode 100644 GIT_lifecycle.jpg
+ create mode 100644 index.html
+14 - git status
+  nothing to commit, working tree clean
+  (нечего комитить, рабочая директория - дерево чисто)
+=========================================
+
+15 - создаем папку с сайтом site_1, внутри кот. файл index.html и папка css, внутри кот. файл style.css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>site1 Тут</h1>
+</body>
+</html>
+
+16 - закомитим папку = создаем снимок состояния проиндексированных файлов раб. директории
+17 - переходим в ету папку
+    cd d:/Taranov/site1
+18 - инициализуем папку 
+  git init
+    Initialized empty Git repository in D:/Taranov/site1/.git/
+19 - git status 
+Untracked files:
+        css/
+        index.html
+nothing added to commit but untracked files present
+20 - git add .
+   - git status
+Changes to be committed:
+        new file:   css/style.css
+        new file:   index.html
+21 - создаем слепок = коммитим с коментарием
+  git commit -m "Первый комит"
+ git commit -m "Первый комит"
+[master (root-commit) 816dd65] Первый комит
+ 2 files changed, 11 insertions(+)
+ create mode 100644 css/style.css
+ create mode 100644 index.html
+22 - git status
+nothing to commit, working tree clean
+23 - добавим текст
+  <p>Какой-то текст</p>
+  <p>Ла-ла-ла</p>
+24 - git status
+        modified:   index.html
+25 - git commit -m "Второй коммит - добавлено Ла-ла-ла" 
+$ git commit -m "Âòîðîé êîììèò - äîáàâëåíî Ëà-ëà-ëà"
+[master f879cf5] Âòîðîé êîììèò - äîáàâëåíî Ëà-ëà-ëà
+ 1 file changed, 2 insertions(+)
+26 - $ git status
+On branch master
+nothing to commit, working tree clean
+26 - удалим весь текст и добавим рыбы
+27 - git add index.html
+28 - git commit -m "3-y komit"
+[master d41a0a3] 3-y komit
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ 29 - git status
+ nothing to commit, working tree clean
+
+ 
+===============================================
+ Заливаем на GitHub - удаленный репозиторий - тут все проекты OpenSurse, G-Query...
+==============================================
+1 - создаем аккаунт, если нет, - если есть - перейти в него
+2 - создаем новый репозиторий (публичный - безплалный) site1
+3 - добавим описание (Description) - не обязательно
+4 - копируем строку 
+git remote add origin https://github.com/scorp1323/site1.git
+и жмем INSERT в GIT
+(определили удаленный репозиторий и назвали его origin)
+5 - подключаемся к GitHub
+  git push -u origin master
+6 - идет запрос на подключение - ввести имя пользователя или мыло 
+  scorp1323 и пароль scorp.1323
+7 - подключается к GitHub
+--------------
+https://www.youtube.com/watch?v=vFj2-bKGwkw
+

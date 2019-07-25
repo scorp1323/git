@@ -1,0 +1,37 @@
+.flex-maam {
+  display: flex; /* Флексы */
+  height: 300px; /* Высота */
+  color: #f00; /* fff Белый цвет текста */
+  font-size: 2.6em; /* Размер шрифта */
+  flex-direction: row; /* направление элементов слева направо (>) */
+  justify-content: space-around; /*Выравнивает элементы по основной оси */
+/* свободное пространство равномерно распределяется между элементами*/
+ align-items: center; 
+ /*отвечает за выравнивание элементов по перпендикулярной оси*/
+ /*flex-start  flex-end  center  space-between  space-around*/
+   }
+.flex-child {
+  display: flex; /* Флексы */
+  align-items: center; /* Выравнивание текста по вертикали */
+  justify-content: center; /* Выравнивание текста по горизонтали */
+
+
+  height: 40px; /* Высота */
+  width: 40px;
+   }
+   
+.A1 {
+  background: Gold; /* Цвет фона */ 
+   }
+.A2 {
+  background: Tomato; /* Цвет фона */
+   }
+.A3 {
+  background: Olive; /* Цвет фона */
+   }
+.A4 {
+  background: Yellow; /* Цвет фона */
+   }
+.A5 {
+  background: Teal; /* Цвет фона */
+   }

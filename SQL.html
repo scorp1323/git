@@ -1,0 +1,38 @@
+<!-- Заходим в SQL.exe через командную строку -->
+1 - поиск->cmd->
+
+2 - ввести путь к Sql.exe
+
+D:\taranov\Git\Denwer_2017\usr\local\mysql-5.7\bin\mysql.exe -u root -p
+3 - при запросе пароля - ЕНТЕР (пустой если пароль)
+
+4 - выдаст приглашение типа Welcome to the MySQL monitor...
+
+5 - просмотр баз существующих   --  show databases;
+
+6 - Выбрать одну таб. из БД и посмотреть список таблиц в ней -- use veterinarnaja_baza; show tables;
+
+7 - создать БД   --   create database test;
+
+8 - вновь вып. команду show databases; , которая покажет, что БД test создана, и доступна для работы
+
+9 - создать в БД test таблицу order -- 
+create table test (`id` int(11),`content` varchar(255));
+
+10 - show tables;  -  покажет, что таб. создана, и доступна для работы (пустая)
+
+11 - Создадим в БД test таблицу table_1 -- 
+create table table_1 (`id` int(11),`column_1` varchar(255));
+
+12 - show tables; -- покажет, что таб. и доступна для работы
+
+13 - вывести список колонок в таблице -- 
+show columns from test.table_1;
+
+14 - вывести все данные с БД test таблицы table_1;
+select * from test.table_1;
+
+15 - вывести все данные с БД test табл. table_1, где id = 2
+select * from test.table_1 where id = 2;
+
+16 - Выход из командной строки mysql - написать exit

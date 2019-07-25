@@ -1,0 +1,55 @@
+/*Сетка*/
+.wrapper {
+    display: block;
+     margin-left: 3px;
+     margin-right: 3px;
+}
+
+.wrapper1 ,
+.wrapper2 ,
+.wrapper3 ,
+.wrapper4,
+.wrapper5,
+.wrapper6,
+.wrapper7 {
+	margin: 3px;
+	border-radius: 6px;
+	border: 2px solid;
+  border-color: #A9A9A9 ;
+}
+
+
+.wrapper1 {
+
+	height: 100px;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ }
+ 
+.wrapper2 { 
+    background-color: red;
+    	width: 200px}
+.wrapper3, .wrapper4{
+	background-color: blue;
+	max-width: 600px;
+}
+.wrapper5 { background-color:Lime; }
+.wrapper6 { background-color: brown;
+    text-align: center;
+
+
+}
+.wrapper7 { background-color: OrangeRed	;
+  display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.wr1_1 {
+    
+    vertical-align: middle;
+    background-color: GreenYellow;
+}
+
+/*Сетка*/

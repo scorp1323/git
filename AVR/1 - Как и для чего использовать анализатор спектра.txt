@@ -1,0 +1,27 @@
+1 - Как и для чего использовать анализатор спектра
+https://www.youtube.com/watch?v=HdwdaSp26A4
+
+2 - ЧТО ТАКОЕ АНАЛОГОВЫЕ И ЦИФРОВЫЕ СИГНАЛЫ [Уроки Ардуино #10]
+https://www.youtube.com/watch?v=vFk2MiHRlQo
+
+3 - Цепи и сигналы
+https://www.youtube.com/watch?v=Sl9uYkXzBOc
+
+4 - Кое-что из теории сигналов
+https://www.youtube.com/watch?v=RJ5TE2SkESE
+
+5 - Выбор микроконтроллера
+https://www.youtube.com/watch?v=pubzfzbty-A
+
+6 - Начальные сведения о микроконтроллере attiny2313
+https://www.youtube.com/watch?v=jINH02eKeHw
+
+7 - Циклы в C++
+https://www.youtube.com/watch?v=muyaViVaGAI
+
+8 - C++ для начинающих!!!!!!!!!!
+https://www.youtube.com/watch?v=kRcbYLK3OnQ&list=PLQOaTSbfxUtCrKs0nicOg2npJQYSPGO9r
+
+
+ - теория сигналов и цепей
+ - как пользоваться спектроанализатором

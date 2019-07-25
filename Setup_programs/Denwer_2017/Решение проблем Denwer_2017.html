@@ -1,0 +1,10 @@
+
+<!-- Проблемы с mysql - Пуск->Выполнить - и ввести -->
+Z:\usr\local\mysql-5.7\bin\mysql_upgrade.exe -u root --force
+
+
+<!-- Ошибки низкого уровня Notice показываются кракозяблами. -->
+ Надо в папке denwer\www\denwer\errors найти файл phperror_js.php и в строке 13 изменить charset=windows-1251 на charset=utf-8
+
+<!-- Показ иконки Апач в трее -->
+Чтобы иконка Apache появилась в трее, в директории \usr\local\apache\bin нужно добавить Apache.ico, кот. можно скачать в интернете
