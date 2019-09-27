@@ -1,0 +1,25 @@
+             = 1 =
+ADOConnection(db_Go)
+1) Conn.string(4-я стока)
+2) Vse Com. String
+3) Build -> MicrofoftOLE DB for ODBC -> вкладка соединения -> исп. строку соединения -> сборка -> источник данных компьютера -> re(создано) -> Ok -> MySQL Connector / ODBS
+		a - TCP/IP-Server -> localhost
+		b - User -> root
+		c - Database s123_vetbasa
+		d -> test -> connection suseful!!! -> Ok -> Ok -> Ok
+4) Connected(3-я строка) -> v true
+
+             = 2 =
+ADOTable(dbGo)
+1) Connection(5-я строка) -> ADO connect
+2) TableName(внизу) -> customer
+3) Active(вверху) -> V true
+
+             = 3 =
+DATA Source (DataAcscess)
+1) DataSet -> ADOTAbe
+
+             = 4 =
+BD Grid(data Controls)
+1) Dat Sourse -> Data Sourse1
+2) -> Работает!!! В таблице появл. данные
