@@ -28,8 +28,6 @@
 
 5 - git remote -v    - посмотреть, какому URL соответствует сокщ. имя в Git
 
-$ git remote -v
-
 6 - git clone https://github.com/scorp1323/site1.git - скопировать содержимое с удал. репоз. в тек. дир.
 
 7 - git remote set-url origin https://github.com/scorp1323/new.git - меняет адресс удаленного репозитория origin на данный (на https://github.com/scorp1323/new.git)
