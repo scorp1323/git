@@ -46,27 +46,31 @@ echo(int) "", '<br>';
 echo (int) ' ', '<br>';
 //0
 //-----------------------------------
-
+?>
+Неявное преобразование:
+<?
 $a = '1';
 echo '$a = ', $a ,' - ',  gettype($a), '<br>';
 //$a = 1 - string
-
 
 $a = 7;
 echo '$a = ', $a , ' - ', gettype($a), '<br>';
 //$a = 7 - integer
 
-
 $a*=2;
 echo '$a = ', $a, ' - ', gettype($a), '<br>';
 //$a = 14 - integer
-
 
 $a*= 1.3;
 echo '$a = ', $a, ' - ', gettype($a), '<br>';
 //$a = 18.2 - double
 
-
 $a = 5 * '10 литров пива';
 echo '$a = ', $a, ' - ', gettype($a), '<br>';
 //$a = 50 - integer
+
+
+$a = '5 человек';// string
+$b = 10;//integer
+echo '$c = ', $c = $a + $b, gettype($c), '<br>' ;
+//$c = 15 - integer
