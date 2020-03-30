@@ -1,32 +1,34 @@
 
 
 const formSearch = document.querySelector('.form-search'),
-inputCitiesFrom = document.querySelector('input__cities-from'),
-dropdownCitiesFrom = document.querySelector('dropdown__cities-from'),
-inputCitiesTo = document.querySelector('input__cities-to'),
-dropdownCitiesTo = document.querySelector('input__cities-to'),
-inputDataDepart = document.querySelector('input__date-depart');
+inputCitiesFrom = document.querySelector('.input__cities-from'),
+dropdownCitiesFrom = document.querySelector('.dropdown__cities-from'),
+inputCitiesTo = document.querySelector('.input__cities-to'),
+dropdownCitiesTo = document.querySelector('.dropdown__cities-to'),
+inputDataDepart = document.querySelector('.input__date-depart');
+
+const city = ['Киев', 'Чернигов', 'Белая церковь', 'Одесса', 'Кропивницкий', 'Кременчуг', 'Полтава', 'Борисполь', 'Львов', 'Днепр', 'Тернополь'];
+
+inputCitiesFrom.addEventListener('input', () => { console.log('Событие Инпут'); });
 
 
-const obj = {
-	key: 'value',
-	'key two': 'Value2',
-	key3: true,
-	key4: {
-		a: 1,
-		b: 'два',
-	},
-	KeyNext: ['array', 5, {a:1, b:2}, [true, false, 0]],
+function show() {
+  console.log('Вызов show')
 }
 
-obj.key5 = 'Привет';
+const get = function() {
+console.log('Вызов get')
+};
 
-//console.log(obj);
 
-let arr = [];
+get();
+get();
 
-console.log(arr);
-//49.14
+
+
+
+
+//1.04.19
 //https://www.youtube.com/watch?v=DWglfTOb8_k&t=1509s
 //Aviasales_JS.ua
 
