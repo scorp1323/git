@@ -1,0 +1,49 @@
+﻿оступ к файлу можно получить из меню "Preferences -> Key Binding - User"
+(Опции -> горячие клавиши -> справа User)
+А все горячие клавиши можно посмотреть тут "Preferences -> Key Binding - Default". 
+
+Важное замечание: Чтобы заработали хоткеи для навигации по файлам и миникарте, нужно сперва включить их в меню "View -> Side Bar -> Hide Side Bar" и "View -> Hide Minimap" соответственно.
+
+[
+  // Скрывает панель навигации по файлам
+  {"keys": ["ctrl+shift+s"], "command": "toggle_side_bar" },
+
+  // Скрывает миникарту
+  {"keys": ["alt+ctrl+shift+s"], "command": "toggle_minimap" },
+
+  // Форматирует отступы в выделенном коде
+  {"keys": ["alt+shift+f"], "command": "reindent" },
+
+  // Дублирует строку
+  { "keys": ["ctrl+d"], "command": "duplicate_line" },
+
+  // Выделяет одинаковые слова 
+  { "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
+
+  // Быстрое создание нового файла
+  { "keys": ["ctrl+shift+n"], "command": "advanced_new_file_new"},
+
+  // Выделение целой строки
+  { "keys": ["ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
+
+  // Удалить целую строку
+  { "keys": ["ctrl+shift+l"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+  // Добавить пустую строку под курсором
+  { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+
+  // Добавить пустую строку над курсором
+  { "keys": ["ctrl+shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} },
+
+  // Меню замены
+  { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+
+  // Панель нечеткого поиска @
+  { "keys": ["ctrl+h"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+
+  // Сохранение всех файлов
+  { "keys": ["ctrl+s"], "command": "save_all" },
+
+  // Сохранение только текущего файла
+  { "keys": ["alt+s"], "command": "save" },
+]

@@ -1,0 +1,32 @@
+             
+1.             <!-- Перевод на Русский язык -->
+Package Control (ctrl + shift + p) -> install package -> поиск LocalizedMenu  
+Использование:
+Preference -> Languages -> Русский
+
+2.Настройка горячих клавиш - текстовый файл в папке
+
+3. Настройка плагинов.
+(Файл настройки плагинов в папке)
+
+
+
+4.  Установка темы Material Theme.
+Ctrl+Shift+P -> install package -> набираем Material Theme.
+Preferences (Опции) -> Color Scheme (цветовая схема) -> Material Theme (без добавок)
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Бэкап всех ваших настроек  -  НЕ ПРОВЕРЕНО-->
+Достаточно скопировать папку 
+"C:\Users\{Ваш пользователь}\AppData\Roaming\Sublime Text 3" 
