@@ -10,8 +10,12 @@
 
 
 <?php
+// $uploaddir = '../home/img';  - если хочешь поебася
 $uploaddir = '../home/img/';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+echo '<pre>' . 
+$_FILES["userfile"]["name"] . 
+'</pre>';
 
 echo '<pre>';
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {

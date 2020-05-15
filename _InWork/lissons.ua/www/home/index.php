@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+include_once "../db.php";
 
 if(
 isset($_SESSION['id']) &&
@@ -11,14 +12,28 @@ isset($_SESSION['name']) &&
 echo 'Добро пожаловать ' . ', ' . $_SESSION['name'];
 echo '<br>';
 
+$login = $_SESSION['log'];
+
+$query_name = mysqli_query($sql, "SELECT avatar FROM users WHERE log = '".$login."'");
+$num_name = mysqli_fetch_array($query_name);
+
+echo '<img src="'.$num_name['avatar'].'" 
+  width="100" height="100" alt="lorem">';
+
+
+
+
+echo '<br>','<br>','<br>';
 echo '<a href="exit.php">Выход</a> ', '<br>';
 echo '<a href="oll_users.php">Список пользователей</a>';
 
 echo '<br>';
 echo '<br>';
-echo '<form action="" method="POST">
+echo '<form enctype="multipart/form-data" action="" method="POST" action="">
 <input type="file" name="avatar">
+<input type="hidden" name="MAX_FILE_SIZE" value="50000000000" />
 <input type="submit" name="upload" value="Загрузить">
+
 </form>';
 
 
@@ -26,7 +41,7 @@ echo '<form action="" method="POST">
 if(isset($_POST['upload'] )) {
   $dir = 'img/';
 
-include_once "../db.php";
+
 $login = $_SESSION['log'];
 
 $query = mysqli_query($sql, "SELECT * FROM users WHERE
@@ -35,11 +50,44 @@ $num = mysqli_fetch_array($query);
 
 $id = $num['id'];
 
-  // $name_img =  date("m.d.y") .    rand(1, 1000)  . $id . '.png' ;
 
-  // echo $name_img;
-  
-$name_img = $_POST['avatar'] . '.png';
+
+// $uploaddir = '../home/img';  - если хочешь поебася
+$uploaddir = '../home/img/';
+$uploadfile = $uploaddir . basename($_FILES['avatar']['name']);
+echo '<pre>' . 
+$_FILES["avatar"]["name"] . 
+'</pre>';
+
+
+$avatar = $_FILES["avatar"]["name"];
+$avatar = 'img/' . $avatar;
+
+$sql_avatar =  mysqli_query($sql, "UPDATE users SET avatar = '".$avatar."' WHERE log = '".$login."'");
+
+
+
+header("Location: http://lissons.ua/home/index.php ");
+//для загрузки картинки без перезагрузки
+
+
+
+
+echo '<pre>';
+if (move_uploaded_file($_FILES['avatar']['tmp_name'], $uploadfile)) {
+    echo "Файл корректен и был успешно загружен.\n";
+} else {
+    echo "Возможная атака с помощью файловой загрузки!\n";
+}
+
+echo 'Некоторая отладочная информация:';
+print_r($_FILES);
+
+print "</pre>";
+
+
+
+
 
 
 // $size = getimagesize($name_img);
@@ -69,3 +117,7 @@ var_dump($_FILES['avatar']) ;
 
 
 ?>
+
+
+
+
