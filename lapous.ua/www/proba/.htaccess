@@ -1,6 +1,0 @@
-AddDefaultCharset utf-8 
-# кодировка utf-8  
-
- 
-php_value date.timezone 'Europe/Kiev'
-#Таймзона Киев Европа :)

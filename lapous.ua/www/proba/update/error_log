@@ -1,2 +1,0 @@
-[14-Jun-2020 22:04:42 Europe/Kiev] PHP Warning:  file_get_contents(https://api.telegram.org/bot1111577747:AAG0l4447b4uGl51oYZ2v6z-Rq49m1Lf-Zc/getUpdates): failed to open stream: HTTP request failed! HTTP/1.1 409 Conflict
- in /home/s1323/lapous.com.ua/proba/update/index.php on line 25
