@@ -1,0 +1,6 @@
+[13-Jun-2020 14:45:18 Europe/Kiev] PHP Parse error:  syntax error, unexpected '$options' (T_VARIABLE) in /home/s1323/lapous.com.ua/proba/webhook/index.php on line 22
+[13-Jun-2020 14:45:33 Europe/Kiev] PHP Parse error:  syntax error, unexpected '$options' (T_VARIABLE) in /home/s1323/lapous.com.ua/proba/webhook/index.php on line 22
+[13-Jun-2020 14:45:58 Europe/Kiev] PHP Notice:  Undefined variable: options in /home/s1323/lapous.com.ua/proba/webhook/index.php on line 22
+[13-Jun-2020 14:45:58 Europe/Kiev] PHP Warning:  http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /home/s1323/lapous.com.ua/proba/webhook/index.php on line 22
+[13-Jun-2020 14:47:51 Europe/Kiev] PHP Warning:  file_get_contents(https://api.telegram.org/bot1111577747:AAG0l4447b4uGl51oYZ2v6z-Rq49m1Lf-Zc/setWebhook?url=https%3A%2F%2Fwww.lapous.com.ua%2Fproba%2Fwebhook%2F): failed to open stream: HTTP request failed! HTTP/1.1 429 Too Many Requests
+ in /home/s1323/lapous.com.ua/proba/webhook/index.php on line 22
