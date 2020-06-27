@@ -31,8 +31,7 @@ echo '<hr>';
 //==================
 //Цикл со счетчиком FOR с примером
 $students = array(
-	array('name' => 'Victor', 
-	'app' => 75),
+	array('name' => 'Victor', 'app' => 75),
 			array('name' => 'Boris', 'app' => 5),
 			array('name' => 'Oleg', 'app' => 32),
 			array('name' => 'Alex', 'app' => 26));
