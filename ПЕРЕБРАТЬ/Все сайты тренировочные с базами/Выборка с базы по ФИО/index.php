@@ -80,9 +80,3 @@ ini_set('display_startup_errors', 1);
 $value = '123abc456def';
 echo filter_var($value, FILTER_SANITIZE_NUMBER_INT);
 ?>
-
-
-
-
-
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
