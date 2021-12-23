@@ -1,0 +1,17 @@
+Настройка SFTP для SublimeText
+Відео https://www.youtube.com/watch?v=J29fqdSzHoI
+
+1 - ctrl+shift+p -> Package Control:Ibstall Pacage
+2 - SFTP
+3 - закидуємо папку, в якій сайт, в ST, якщо ще не зробили
+4 - в підпапці www - права кн. миші->SFTP/FTP->Edit Remote Mapping
+5 - відкриється файл sftp-config.json з настройками
+6 - "type": "sftp" -> "type": "ftp"
+7 - "host": "dnshosting.name",
+8 - "user": "s1323",
+9 - "password": "131313",
+10 - "remote_path": "/public_html",
+11 - "ftp_passive_mode": true,
+12 - зберігаємо, закриваємо
+13 - в корні з'являється файл sftp-config.json
+14 - правою кн.миші на папці->DownLoad Folder - скачає всю папку з серверу
