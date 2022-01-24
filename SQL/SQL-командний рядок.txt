@@ -1,0 +1,22 @@
+1 - запустити денвер або SQL локальний
+2 - запустити командний р€док в≥д адм≥н≥стратора cmd
+3 - C:\dnw\usr\local\mysql-5.7\bin\mysql.exe -u root -p    - набрати в командному р€дку
+4 - запросить пароль Enter password: - просто нажати ентер - пароль пустий
+5 - видасть Welcome to the MySQL monitor.   - запрошенн€    mysql>
+6 - вводим   show databases;  - покаже вс≥ на€вн≥ Ѕƒ
+7 - use lapous; show tables; - вибрати Ѕƒ-lapous та перегл€нути список таблиць в н≥й
+7 - SHOW COLUMNS FROM users; - просмотр колонок и их свойств у таб.users
+
+
+—писок основних команд SQL:
+- CREATE DATABASE DB_NAME; Ч создать новую бд;
+- SHOW DATABASES; Ч просмотр имеющихс€ бд;
+- USE DB_NAME; Ч выбрать бд;
+- SHOW TABLES; Ч просмотр всех таблиц;
+- SHOW COLUMNS FROM TABLE_NAME; Ч просмотр колонок и их свойств;
+- CREATE TABLE TABLE_NAME (`ID` INT(11),`NAME` VARCHAR(255)); Ч создание таблицы;
+- ALTER TABLE TABLE_NAME ADD COLUMN_NAME INT(11); Ч добавить колонку в таблицу;
+- ALTER TABLE TABLE_NAME DROP COLUMN_NAME; Ч удалить колонку из таблицы;
+- MYSQL -UUSERNAME -PPASSWORD -HHOST DB_NAME < FILE_NAME.SQL Ч залить бд;
+- MYSQLDUMP -UUSERNAME -PPASSWORD -HHOST DB_NAME > FILE_NAME.SQL Ч сделать дамп бд;
+- QUIT; Ч выход из консольки MySQL.
