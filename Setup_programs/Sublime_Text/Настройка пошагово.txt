@@ -16,6 +16,9 @@ Ctrl+Shift+P -> install package -> набираем Material Theme.
 Preferences (Опции) -> Color Scheme (цветовая схема) -> Material Theme (без добавок)
 
 
+5 - перенос строк - Вкладка Preferences ➤ Setting ➤ В настройках Юзера прописать "word_wrap": true,
+
+
 
 
 

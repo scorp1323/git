@@ -1,0 +1,52 @@
+[
+    {
+        "mnemonic": "F", 
+        "id": "file", 
+        "caption": "Файл"
+    }, 
+    {
+        "mnemonic": "E", 
+        "id": "edit", 
+        "caption": "Правка"
+    }, 
+    {
+        "mnemonic": "S", 
+        "id": "selection", 
+        "caption": "Выделение"
+    }, 
+    {
+        "mnemonic": "i", 
+        "id": "find", 
+        "caption": "Поиск"
+    }, 
+    {
+        "mnemonic": "V", 
+        "id": "view", 
+        "caption": "Вид"
+    }, 
+    {
+        "mnemonic": "G", 
+        "id": "goto", 
+        "caption": "Перейти"
+    }, 
+    {
+        "mnemonic": "T", 
+        "id": "tools", 
+        "caption": "Инструменты"
+    }, 
+    {
+        "mnemonic": "P", 
+        "id": "project", 
+        "caption": "Проект"
+    }, 
+    {
+        "mnemonic": "n", 
+        "id": "preferences", 
+        "caption": "Настройки"
+    }, 
+    {
+        "mnemonic": "H", 
+        "id": "help", 
+        "caption": "Справка"
+    }
+]

@@ -5,6 +5,15 @@ Ctrl+Shift+P. Во всплывающем окне набираем Install Pack
 <!-- Установка плагинов автоматическая: -->
 Для установки плагинов в Sublime Text через Package Control необходимо вызвать меню - Ctrl+Shift+P. Затем вводим команду "Install Package" и выбираем нужный пакет из списка.
  - 0 - livereload - перезагрузка страницы без вставки скрипта!!!
+    - в хромі теж установить плагін і настроїти його щоб чорний кружок з кругом в центрі був на екрані
+    В ST Preferences - Package Settings - LiveReload - Settings - User і вставляємо код:
+    {
+    "enabled_plugins": [
+    "SimpleReloadPlugin",
+    "SimpleRefresh"
+    ]
+    }
+Тепер не потрібно при кожному запуску Sublime Text включати LiveReload.
  - 1 - Emmet - ускоряет написание HTML и CSS кода
  - 2 - AutoFileName - дополняет код при написании путей до файлов в вёрстке;
  - 3 - Gist - подключает в Sublime Text возможность использовать сервис сниппетов кода GitHub Gist.
@@ -12,7 +21,7 @@ Ctrl+Shift+P. Во всплывающем окне набираем Install Pack
  - 5 - Placeholders (Lorem Ipsum наполнители для html файлов)
  - 6 - SideBarEnhancements расширяет возможность сайт бара!!!!!!!!
  - 7 - SyncedSideBar - синхронизирует SideBar с открытыми файлами по клику на них
-  - 8 - A File Icon - иконки файлов в SideBar !!!
+  - 8 - FileIcon - иконки файлов в SideBar !!!
   - 9 - Color Highlight - цвета в css пишуться цветом
  - 10 - SublimeCodeIntel - поможет быстрее разобраться в старом коде. При нажатии на имя функции покажет ссылку, по которой можно перепрыгнуть прямо к описанию этой функции.
  - 11 - ApacheConf - підсвітка синтаксису .conf, .htaccess, .htgroups, .htpasswd.
