@@ -1,17 +1,17 @@
-Настройка SFTP для SublimeText
-Відео https://www.youtube.com/watch?v=J29fqdSzHoI
+РќР°СЃС‚СЂРѕР№РєР° SFTP РґР»СЏ SublimeText
+Р’С–РґРµРѕ https://www.youtube.com/watch?v=J29fqdSzHoI
 
 1 - ctrl+shift+p -> Package Control:Ibstall Pacage
 2 - SFTP
-3 - закидуємо папку, в якій сайт, в ST, якщо ще не зробили
-4 - в підпапці www - права кн. миші->SFTP/FTP->Edit Remote Mapping
-5 - відкриється файл sftp-config.json з настройками
+3 - Р·Р°РєРёРґСѓС”РјРѕ РїР°РїРєСѓ, РІ СЏРєС–Р№ СЃР°Р№С‚, РІ ST, СЏРєС‰Рѕ С‰Рµ РЅРµ Р·СЂРѕР±РёР»Рё
+4 - РІ РїС–РґРїР°РїС†С– www - РїСЂР°РІР° РєРЅ. РјРёС€С–->SFTP/FTP->Edit Remote Mapping
+5 - РІС–РґРєСЂРёС”С‚СЊСЃСЏ С„Р°Р№Р» sftp-config.json Р· РЅР°СЃС‚СЂРѕР№РєР°РјРё
 6 - "type": "sftp" -> "type": "ftp"
 7 - "host": "dnshosting.name",
 8 - "user": "s1323",
 9 - "password": "131313",
 10 - "remote_path": "/public_html",
 11 - "ftp_passive_mode": true,
-12 - зберігаємо, закриваємо
-13 - в корні з'являється файл sftp-config.json
-14 - правою кн.миші на папці->DownLoad Folder - скачає всю папку з серверу
+12 - Р·Р±РµСЂС–РіР°С”РјРѕ, Р·Р°РєСЂРёРІР°С”РјРѕ
+13 - РІ РєРѕСЂРЅС– Р·'СЏРІР»СЏС”С‚СЊСЃСЏ С„Р°Р№Р» sftp-config.json
+14 - РїСЂР°РІРѕСЋ РєРЅ.РјРёС€С– РЅР° РїР°РїС†С–->DownLoad Folder - СЃРєР°С‡Р°С” РІСЃСЋ РїР°РїРєСѓ Р· СЃРµСЂРІРµСЂСѓ

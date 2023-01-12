@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<?php
+//так всегда начинается php код(файл)
+//============================================
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+// так отображаются все ошибки
+//============================================
+
+//вивести запрос з строки ввода
+print_r($_SERVER['REQUEST_URI']);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Myphp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
