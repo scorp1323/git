@@ -1,21 +1,30 @@
-                    - НАСТРОЙКА - 
-1 - git config --global user.name "Taranov Sergiy" - настраиваем имя
-2 - git config user.name  - проверка имени - Taranov Sergiy
-3 - git config --global user.email "scorp1323@gmail.com" - настраиваем email
-4 - git config user.email - проверка email
-5 - git config --list - выводим полностью config
-6 - git help --commit -  выводим справку по команде commit
+                    - НАЛАШТУВАННЯ - 
+1 - git config --global user.name "Taranov Sergiy" - налаштовуємо ім'я користувача ("Taranov Sergiy")
+2 - git config user.name  - перевірка ім'я користувача - Taranov Sergiy
+3 - git config --global user.email "scorp1323@gmail.com" - налашиовуємо email користувача
+4 - git config user.email - перевірка email
+5 - git config --list - виводимо повністью config
+6 - git help --commit -  виводимо довідку по команді commit
 ----------------------------------
-              - ИНИЦИАЦИЯ НОВОЙ ПАПКИ - 
-1 - mkdir site_1 -  Создание нового локального репозитория site_1
-2 - cd site_1 - перейти в папку site_1
-2 - git init - инициировать директорию, в кот. находится
+              - ІНІЦІАЛІЗАЦІЯ НОВОЇ ТЕКИ - 
+1 - mkdir site_1 -  утв. нової теки site_1
+2 - cd site_1 - перейти в теку site_1
+3 - git init - ініціювати директорію, в якій знах.
+4 - ls - показати всі файли та папки в даній текі
+4 - ls -a - показати всі файли + сховані та папки в даній текі
+4 - ls -l - показати всі файли у вигляді таб. з правами
 -----------------------------------
+              - РОБОТА З GIT - 
 1 - git status - проверка состояния
-2 - git add <file1> <file2> - подготавливаем коммит, добавляя в него файлы
-3 - git add . - подготавливаем коммит, добавляя в него  все файлы
-4 - git rm <file1> <file2>  - удаляем устаревшие файлы
-5 - git commit -m 'Комментарий к коммиту' - выполняем коммит (слепок)
+2 - git log - показати всі коміти
+3 - git add <file1> <file2> - подготавливаем коммит, добавляя в него файлы
+4 - git add . - подготавливаем коммит, добавляя в него  все файлы
+5 - git rm <file1> <file2>  - удаляем устаревшие файлы
+6 - git commit -m 'Комментарий к коммиту' - выполняем коммит (слепок)
+-----------------------------------
+              - Гілки в GIT -
+1 - git checkout -b 'New_Fitca' - создати гілку 'New_Fitca'
+2 - git checkout main - перейти на вітку main
 -----------------------------------
               - УДАЛЕННЫЙ КОММИТ -
 1 - git remote add origin https://github.com/scorp1323/site1.git - подключится к удаленному репозиторию и дать ему имя origin
@@ -31,3 +40,10 @@
 6 - git clone https://github.com/scorp1323/site1.git - скопировать содержимое с удал. репоз. в тек. дир.
 
 7 - git remote set-url origin https://github.com/scorp1323/new.git - меняет адресс удаленного репозитория origin на данный (на https://github.com/scorp1323/new.git)
+-----------------------------------
+              - ДОДАТКОВІ КОМАНДИ -
+1 - pwd - (print working directory) — надрукувати робочий каталог- виводить повний шлях від кореневого до поточного робочого каталогу.
+2 - cd site_1 - перейти в теку site_1
+3 - cd../ - перейти на кореневу папку
+4 - cd //192.168.1.208/admin/lapous_boss  - перехід на облачну папку свою
+5 - git config --global --add safe.directory '%(prefix)///192.168.1.208/admin/'
