@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+<!DOCTYPE html>
+<html lang="ua,en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+   </script>
+
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+    <link rel="shotcut icon" href="./favicon.ico" type="image/x-icon">
+    
+    <title>Тестовая сторінка</title>
+</head>
+<body>
+
+    
+    <script src="./ajax.js"></script>
+    <script type="module"  defer src="./script.js"></script>
+</body>
+</html>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>html5_0</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

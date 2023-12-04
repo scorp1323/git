@@ -7,6 +7,16 @@
 7 - use lapous; show tables; - вибрати БД-lapous та переглянути список таблиць в ній
 7 - SHOW COLUMNS FROM users; - просмотр колонок и их свойств у таб.users
 
+ SHOW COLUMNS FROM user;
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| id          | int(6)      | NO   | PRI | NULL    | auto_increment |
+| login       | varchar(50) | NO   | UNI | NULL    |                |
+| password    | varchar(50) | NO   |     | NULL    |                |
+| first_name  | varchar(50) | NO   |     | NULL    |                |
+| second_name | varchar(50) | NO   |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
 
 Список основних команд SQL:
 - CREATE DATABASE DB_NAME; — создать новую бд;
@@ -20,3 +30,28 @@
 - MYSQL -UUSERNAME -PPASSWORD -HHOST DB_NAME < FILE_NAME.SQL — залить бд;
 - MYSQLDUMP -UUSERNAME -PPASSWORD -HHOST DB_NAME > FILE_NAME.SQL — сделать дамп бд;
 - QUIT; — выход из консольки MySQL.
+
+- ALTER DATABASE mydbnew COLLATE utf8_general_ci; - перекодування бази
+- ALTER TABLE users CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;- перекодування таб.
+- ALTER TABLE `mydbnew`.`users` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci; - перекодування таб.
+- SHOW VARIABLES; - перевірити встановлену кодировку бази
+
+- show table status; - працює так само, як SHOW TABLES, але надає багато інфи
+- RENAME TABLE user TO users; - перейменування таблиці
+
+- ALTER TABLE users ADD PRIMARY KEY (ID); - змінити стовпець ID, зробивши його унікальним
+- ALTER TABLE users MODIFY COLUMN login VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL; - перекодування стовпця
+- ALTER TABLE users MODIFY ID INT(6) AUTO_INCREMENT;- змінити стовпець ID - AUTO_INCREMENT
+- ALTER TABLE `users` CHANGE COLUMN `ID` `IDI` int(6) NOT NULL AUTO_INCREMENT; - перейменувати ID
+- ALTER TABLE users MODIFY ID INT(6) NOT NULL; - змінити стовпець ID - NOT NULL
+- ALTER TABLE users ADD UNIQUE (login);
+
+- ALTER TABLE users 
+MODIFY password VARCHAR(50) NOT NULL,
+MODIFY first_name VARCHAR(50) NOT NULL,
+MODIFY second_name VARCHAR(50) NOT NULL; - змінити кілька стовпів - NOT NULL
+
+ - INSERT INTO users (login,password,first_name,second_name) VALUES ('scorp1323','131313','Сергій', 'Таранов');
+ - SELECT * FROM users;
+
+- UPDATE users SET first_name = 'Серг?й' WHERE 'first_name' = 'Серг?й'; - Серг?й ->  
