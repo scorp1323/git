@@ -40,6 +40,12 @@
 6 - git clone https://github.com/scorp1323/site1.git - скопировать содержимое с удал. репоз. в тек. дир.
 
 7 - git remote set-url origin https://github.com/scorp1323/new.git - меняет адресс удаленного репозитория origin на данный (на https://github.com/scorp1323/new.git)
+
+8 - git pull origin master --rebase - Онови локальний репозиторій якщо твоя локальна гілка відстає від віддаленого репозиторію
+
+9 - git rebase --continue - Якщо були конфлікти при злитті, виправ їх, збережи файли та виконай:
+ - git add .
+ - git rebase --continue
 -----------------------------------
               - ДОДАТКОВІ КОМАНДИ -
 1 - pwd - (print working directory) — надрукувати робочий каталог- виводить повний шлях від кореневого до поточного робочого каталогу.
